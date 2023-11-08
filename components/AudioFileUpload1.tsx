@@ -58,7 +58,6 @@ import Skeleton from 'react-loading-skeleton'
 import 'react-loading-skeleton/dist/skeleton.css'
 import PdfGenerator from './PdfGenerator';
 import saveAs from 'file-saver';
-import { supabase } from '../libs/supabase'
 import CallToAction from './CallToAction-Playground';
 import AudioPlayer from './AudioPlayer';
 
@@ -157,35 +156,8 @@ function App() {
         const uniqueFileName = `${Date.now()}.${fileExtensionVariable}`;
         // console.log("unique file name: " + uniqueFileName);
 
-        const { data: uploadData, error: uploadError } = await supabase
-        .storage
-        .from('voxlab-blob')
-        .upload(`blob/${uniqueFileName}`, blobData, {
-            cacheControl: '3600',
-            upsert: false,
-        });
-
-        if (uploadError) {
-        console.log("Upload error: " + uploadError);
-        } else {
-        // console.log("Upload success: " + uploadData);
-        }
-
-        const { data: signedUrlData, error: signedUrlError } = await supabase
-        .storage
-        .from('voxlab-blob')
-        .createSignedUrl(`blob/${uniqueFileName}`, 180, {
-            download: true
-        });
 
         let audio_url: string = '';
-
-        if (signedUrlError) {
-            console.error("Signed URL error: " + signedUrlError);
-        } else {
-             audio_url = signedUrlData.signedUrl || '';
-            // console.log("Signed URL data: " + signedUrlData.signedUrl);
-        }
 
         formData.append('audio_url', audio_url)
 
