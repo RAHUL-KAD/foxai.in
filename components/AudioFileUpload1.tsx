@@ -92,205 +92,6 @@ function App() {
 
 //   const supabase = client;
 
-  function generateLLMSummary(data: { chat_message: string | any, conversation: string }){
-    if (process.env.NEXT_PUBLIC_LLM_URL){
-
-        const formData = new FormData();
-        formData.append('chat_message', data.chat_message);
-        formData.append('conversation', data.conversation);
-    
-        const llmApiUrl = process.env.NEXT_PUBLIC_LLM_URL;
-        setLlmError(false); // Reset error state
-        
-        try {
-            axios.post(llmApiUrl, formData, {
-            headers: {
-                'Content-Type': 'multipart/form-data',
-            },
-            })
-            .then((response) => {
-                if (response.status === 200) {
-                // console.log("LLM Response from summary: ", response.data);
-                setgenerateSummary(response.data);
-                return response.data;
-
-                } else {
-                setLlmError(true); // Set error state to true
-                console.error(`Request failed with status code ${response.status}`);
-                console.log(response.data);
-                }
-            })
-            .catch((error) => {
-                setLlmError(true); // Set error state to true
-                console.error(`An error occurred: ${error}`);
-            });
-        } catch (error) {
-            setLlmError(true); // Set error state to true
-            console.error(`An error occurred: ${error}`);
-        }}
-
-        return '';
-  }
-
-  function generateLLMSatisfaction(data: { chat_message: string | any, conversation: string }){
-    if (process.env.NEXT_PUBLIC_LLM_URL){
-
-        const formData = new FormData();
-        formData.append('chat_message', data.chat_message);
-        formData.append('conversation', data.conversation);
-    
-        const llmApiUrl = process.env.NEXT_PUBLIC_LLM_URL;
-        setLlmError(false); // Reset error state
-        
-        try {
-            axios.post(llmApiUrl, formData, {
-            headers: {
-                'Content-Type': 'multipart/form-data',
-            },
-            })
-            .then((response) => {
-                if (response.status === 200) {
-                // console.log("LLM Response from Satisfaction: ", response.data);
-                setgenerateSatisfaction(response.data);
-                return response.data;
-
-                } else {
-                setLlmError(true); // Set error state to true
-                console.error(`Request failed with status code ${response.status}`);
-                console.log(response.data);
-                }
-            })
-            .catch((error) => {
-                setLlmError(true); // Set error state to true
-                console.error(`An error occurred: ${error}`);
-            });
-        } catch (error) {
-            setLlmError(true); // Set error state to true
-            console.error(`An error occurred: ${error}`);
-        }}
-
-        return '';
-  }
-
-  function generateLLMSentiment(data: { chat_message: string | any, conversation: string }){
-    if (process.env.NEXT_PUBLIC_LLM_URL){
-
-        const formData = new FormData();
-        formData.append('chat_message', data.chat_message);
-        formData.append('conversation', data.conversation);
-    
-        const llmApiUrl = process.env.NEXT_PUBLIC_LLM_URL;
-        setLlmError(false); // Reset error state
-        
-        try {
-            axios.post(llmApiUrl, formData, {
-            headers: {
-                'Content-Type': 'multipart/form-data',
-            },
-            })
-            .then((response) => {
-                if (response.status === 200) {
-                // console.log("LLM Response from Sentiment: ", response.data);
-                setgenerateSentiment(response.data);
-                return response.data;
-
-                } else {
-                setLlmError(true); // Set error state to true
-                console.error(`Request failed with status code ${response.status}`);
-                console.log(response.data);
-                }
-            })
-            .catch((error) => {
-                setLlmError(true); // Set error state to true
-                console.error(`An error occurred: ${error}`);
-            });
-        } catch (error) {
-            setLlmError(true); // Set error state to true
-            console.error(`An error occurred: ${error}`);
-        }}
-
-        return '';
-  }
-
-  function generateLLMTurnover(data: { chat_message: string | any, conversation: string }){
-    if (process.env.NEXT_PUBLIC_LLM_URL){
-
-        const formData = new FormData();
-        formData.append('chat_message', data.chat_message);
-        formData.append('conversation', data.conversation);
-    
-        const llmApiUrl = process.env.NEXT_PUBLIC_LLM_URL;
-        setLlmError(false); // Reset error state
-        
-        try {
-            axios.post(llmApiUrl, formData, {
-            headers: {
-                'Content-Type': 'multipart/form-data',
-            },
-            })
-            .then((response) => {
-                if (response.status === 200) {
-                // console.log("LLM Response from turnover: ", response.data);
-                setgenerateTurnover(response.data);
-                return response.data;
-
-                } else {
-                setLlmError(true); // Set error state to true
-                console.error(`Request failed with status code ${response.status}`);
-                console.log(response.data);
-                }
-            })
-            .catch((error) => {
-                setLlmError(true); // Set error state to true
-                console.error(`An error occurred: ${error}`);
-            });
-        } catch (error) {
-            setLlmError(true); // Set error state to true
-            console.error(`An error occurred: ${error}`);
-        }}
-
-        return '';
-  }
-
-  function generateLLMTopic(data: { chat_message: string | any, conversation: string }){
-    if (process.env.NEXT_PUBLIC_LLM_URL){
-
-        const formData = new FormData();
-        formData.append('chat_message', data.chat_message);
-        formData.append('conversation', data.conversation);
-    
-        const llmApiUrl = process.env.NEXT_PUBLIC_LLM_URL;
-        setLlmError(false); // Reset error state
-        
-        try {
-            axios.post(llmApiUrl, formData, {
-            headers: {
-                'Content-Type': 'multipart/form-data',
-            },
-            })
-            .then((response) => {
-                if (response.status === 200) {
-                // console.log("LLM Response from topic: ", response.data);
-                setgenerateTopic(response.data);
-                return response.data;
-
-                } else {
-                setLlmError(true); // Set error state to true
-                console.error(`Request failed with status code ${response.status}`);
-                console.log(response.data);
-                }
-            })
-            .catch((error) => {
-                setLlmError(true); // Set error state to true
-                console.error(`An error occurred: ${error}`);
-            });
-        } catch (error) {
-            setLlmError(true); // Set error state to true
-            console.error(`An error occurred: ${error}`);
-        }}
-
-        return '';
-  }
 
   function llmRequestResponse(data: { chat_message: string | any, conversation: string }) {
       setllmLoading(true);
@@ -414,7 +215,6 @@ function App() {
             chat_message: "is customer satisfied in this conversation",
             conversation: transcript,
             };
-            generateLLMSatisfaction(llm_satisfaction)
 
             const llm_sentiment = {
                 // chat_message: "what is the entire conversation sentiment? what is the agent sentiment? what is the customer sentiment?",
@@ -522,72 +322,6 @@ function App() {
       }
   }
 
-  // Function to format the text with line breaks
-  const formatTextWithLineBreaks = (text: string) => {
-    const formattedResponse = text.replace(/Speaker (\d+:)/g, '\nSpeaker $1');
-
-    const speakerResponses = formattedResponse.split('\n').filter(response => response.trim() !== '');
-
-      return speakerResponses;
-  }
-
-  const generatePdf = async (summary: string) => {
-
-    if (process.env.NEXT_PUBLIC_PDF_GENERATE){
-    try {
-      const response = await axios.post(process.env.NEXT_PUBLIC_PDF_GENERATE, {
-        summary: summary,
-      });  
-
-      console.log("pdf response: " + response.data.file_path)
-      const pdf_file_path = String(response.data.file_path)
-  
-      return pdf_file_path;
-    } catch (error) {
-      console.error('Error generating PDF:', error);
-      throw error;
-    }
-    }
-  };
-
-
-  const handleGeneratePdf = async (summary : string) => {
-    try {
-      const pdfDataFilePath = await generatePdf(summary);
-    
-      const { data, error } = await supabase
-      .storage
-      .from('voxlab-pdf')
-      .download(`pdf/${pdfDataFilePath}`);
-      
-        if (error) {
-            // Handle the error
-            console.error('Supabase Storage error:', error);
-        } else {
-            // The file download was successful, and data contains the file content.
-            // You can use the data here.
-            console.log('File downloaded successfully', {data});
-            const blob = new Blob([data], { type: 'application/pdf' });
-            const link = document.createElement('a');
-            link.href = window.URL.createObjectURL(blob);
-            link.download = `${+new Date()}.pdf`;
-            link.click();
-            window.URL.revokeObjectURL(link.href);
-        }
-    }
-    catch (error) {
-        // Handle any other errors that may occur outside of the Supabase request.
-        console.error('An unexpected error occurred:', error);
-    }
-} 
-
-async function uiReportGeneration(e: any) {
-
-    setUiSummaryGeneratorBool(true);
-}
-
-
-
   return (
     <div className="App mb-44">
       <header className="">
@@ -621,6 +355,12 @@ async function uiReportGeneration(e: any) {
                   <source src={filebase64} />
               </video>
               }
+
+            {(filebase64.indexOf("image/") > -1)  && 
+            <img className='mt-10 block w-full max-w-md mx-auto'>
+                <source src={filebase64} />
+            </img>
+            }
 
               {(filebase64.indexOf("audio/") > -1)  && 
               <audio controls className='mt-10 block w-full max-w-md mx-auto'>
@@ -698,14 +438,7 @@ async function uiReportGeneration(e: any) {
                         }
 
                         {apiResponse &&
-                        <div className="max-h-[450px] overflow-y-auto ">
-                            <h1 className="text-xl font-bold">ASR Transcript: </h1>
-                            <p className='mt-5'></p>
-                                {formatTextWithLineBreaks(apiResponse).map((response, index) => 
-                                <h1 className='text-left mt-2' key={index}>{response}</h1>
-                            )}
-                        
-                        </div>
+                        <div></div>
                         }
                     </div>
 
@@ -841,9 +574,7 @@ async function uiReportGeneration(e: any) {
 
         { uploadUi  && !apiResponse && !uiSummaryGeneratorBool && generateSummary && generateSatisfaction && generateSentiment && generateTurnover && generateTopic &&
             <div>
-                <button onClick={uiReportGeneration} className="mt-40 inline-flex items-center justify-center rounded-xl border-2 bg-[#6a32ee] px-6 py-3 text-center font-medium text-white duration-200 hover:border-black hover:bg-transparent hover:text-black focus:outline-none focus-visible:outline-black focus-visible:ring-black lg:w-auto">
-                    Generate Report
-                </button>
+                
             </div>
         }
 

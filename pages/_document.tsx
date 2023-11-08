@@ -12,19 +12,19 @@ class MyDocument extends Document {
         <link rel="icon" href="/favicon.svg" />
           <meta
             name="description"
-            content="Enhance AI with Synthetic data"
+            content="Advanced Face Recognition API."
           />
           <meta property="og:site_name" content="voxlab.co" />
           <meta
             property="og:description"
-            content="Free AI Powered Image Processing Tools."
+            content="Advanced Face Recognition API."
           />
-          <meta property="og:title" content="Enhance AI with Synthetic data" />
+          <meta property="og:title" content="Advanced Face Recognition API" />
           <meta name="twitter:card" content="summary_large_image" />
-          <meta name="twitter:title" content="Enhance AI with Synthetic data" />
+          <meta name="twitter:title" content="Advanced Face Recognition API" />
           <meta
             name="twitter:description"
-            content="Enhance AI with Synthetic data"
+            content="Advanced Face Recognition API"
           />
           {/* Add Image here for a preview */}
           <meta
