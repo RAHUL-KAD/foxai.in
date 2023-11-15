@@ -18,20 +18,28 @@ export default function Compare(){
             ></div>
             <div className="grid sm:grid-cols-2">
             <div className="relative space-y-6 p-8 sm:p-12">
-              <h3 className="text-center text-4xl font-semibold text-gray-700 dark:text-white">Sonicai</h3>
+              <h3 className="text-center text-5xl font-semibold text-gray-700 dark:text-white">Transcribe</h3>
               <div>
-                <div className="relative flex justify-around">
+                {/* <div className="relative flex justify-around">
                   <div className="flex items-end">
                     <span className="leading-0 text-7xl font-bold text-gray-800 dark:text-white">4</span>
                     <div className="pb-2">
-                      {/* <span className="block text-2xl font-bold text-gray-700 dark:text-white">%</span> */}
+                      <span className="block text-2xl font-bold text-gray-700 dark:text-white">%</span>
                       <span className="block text-2xl font-bold text-gray-700 dark:text-white">&nbsp; times</span>
                       <span className="block text-xl font-bold text-primary">&nbsp; Faster</span>
                     </div>
                   </div>
-                </div>
+                </div> */}
               </div>
               <ul role="list" className="m-auto w-max space-y-4 py-6 text-gray-600 dark:text-gray-300">
+              <li className="space-x-2">
+                  <span className="font-bold text-lg text-green-500">&#10003;</span>
+                  <span>Batch process</span>
+                </li>
+                <li className="space-x-2">
+                  <span className="font-bold text-lg text-green-500">&#10003;</span>
+                  <span>30+ Languages</span>
+                </li>
                 <li className="space-x-2">
                   <span className="font-bold text-lg text-green-500">&#10003;</span>
                   <span>Diarization (separate per speaker) </span>
@@ -67,39 +75,23 @@ export default function Compare(){
               </ul>
             </div>
             <div className="relative space-y-6 p-8 sm:p-12">
-              <h3 className="text-center text-4xl font-semibold text-gray-700 dark:text-white sm:mb-28">Openai Whisper</h3>
+              <h3 className="text-center text-5xl font-semibold text-gray-700 dark:text-white">Understand</h3>
               <ul role="list" className="m-auto w-max space-y-4 py-6 text-gray-600 dark:text-gray-300">
                 <li className="space-x-2">
-                  <span className="font-bold text-lg text-red-500">&#10540;</span>
-                  <span>Diarization (separate per speaker) </span>
+                  <span className="font-bold text-lg text-green-500">&#10003;</span>
+                  <span>Summarisation</span>
                 </li>
                 <li className="space-x-2">
-                  <span className="font-bold text-lg text-red-500">&#10540;</span>
-                  <span>Realtime Stremaming </span>
+                  <span className="font-bold text-lg text-green-500">&#10003;</span>
+                  <span>Topic Extraction</span>
                 </li>
                 <li className="space-x-2">
-                <span className="font-bold text-lg text-red-500">&#10540;</span>
-                  <span>Word level timestamps</span>
+                <span className="font-bold text-lg text-green-500">&#10003;</span>
+                  <span>Key points extraction</span>
                 </li>
                 <li className="space-x-2">
-                <span className="font-bold text-lg text-red-500">&#10540;</span>
-                  <span>Custom Vocabulary (keyword boosting)</span>
-                </li>
-                <li className="space-x-2">
-                <span className="font-bold text-lg text-red-500">&#10540;</span>
-                  <span>Redaction</span>
-                </li>
-                <li className="space-x-2">
-                <span className="font-bold text-lg text-red-500">&#10540;</span>
-                  <span>Summarization</span>
-                </li>
-                <li className="space-x-2">
-                <span className="font-bold text-lg text-red-500">&#10540;</span>
-                  <span>Numeral Formatting</span>
-                </li>
-                <li className="space-x-2">
-                <span className="font-bold text-lg text-red-500">&#10540;</span>
-                  <span>Profanity Filter</span>
+                <span className="font-bold text-lg text-green-500">&#10003;</span>
+                  <span>Translation</span>
                 </li>
               </ul>
             </div>
@@ -115,19 +107,19 @@ export default function Compare(){
             <div className="relative p-6 pt-16 md:rounded-r-2xl md:p-8 md:pl-12 lg:p-16 lg:pl-20">
               <ul role="list" className="space-y-4 py-6 text-gray-600 dark:text-gray-300">
                 <li className="space-x-2">
-                    <span className="font-bold text-lg text-red-500">&#10540;</span>
+                    <span className="font-bold text-lg text-red-500">&#10003;</span>
                   <span>First premium advantage</span>
                 </li>
                 <li className="space-x-2">
-                    <span className="font-bold text-lg text-red-500">&#10540;</span>
+                    <span className="font-bold text-lg text-red-500">&#10003;</span>
                   <span>Second advantage weekly</span>
                 </li>
                 <li className="space-x-2">
-                    <span className="font-bold text-lg text-red-500">&#10540;</span>
+                    <span className="font-bold text-lg text-red-500">&#10003;</span>
                   <span>Third advantage donate to project</span>
                 </li>
                 <li className="space-x-2">
-                    <span className="font-bold text-lg text-red-500">&#10540;</span>
+                    <span className="font-bold text-lg text-red-500">&#10003;</span>
                   <span>Fourth, access to all components weekly</span>
                 </li>
               </ul>

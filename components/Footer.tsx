@@ -38,7 +38,7 @@ export default function Footer() {
           </li>
           <li>
               <a               
-              href="https://tally.so/r/m6e6EA"
+              href="https://tally.so/r/3Exd6A"
               target="_blank"
               rel="noopener noreferrer" className="mr-4 hover:underline md:mr-6">Contact</a>
           </li>

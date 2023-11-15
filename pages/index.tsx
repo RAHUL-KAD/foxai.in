@@ -45,17 +45,17 @@ const Home: NextPage = () => {
           {/* <Badge text={"Try our GenAI solution for Contact Center"} /> */}
           <h1 className="font-display mx-auto max-w-4xl text-4xl font-bold sm:text-left text-center tracking-normal text-slate-900 sm:text-5xl">
             <span className="relative whitespace-nowrap text-[#333]">
-              <span className="relative mr-2">Most Accurate STT</span>
+              <span className="relative mr-2">Transcribe & Understand</span>
             </span>
           </h1>
 
           <h1 className="font-display relative whitespace-nowrap sm:text-left text-center mx-auto lg:mt-4 max-w-4xl text-4xl font-bold tracking-normal text-[#333] sm:mt-2 sm:text-5xl">
-          Powered by Whisper
+          Human Speech
           </h1>
 
           <p className="mx-auto mt-5 text-center md:text-left sm:text-xl text-lg leading-7 text-[#333] sm:mt-5 whitespace-wrap">
           {/* Transform contact center customer experience with generative AI. */}
-          Get access to the state of the art Speech to Text API.
+          Our focus is on building advanced solutions that go beyond traditional transcription methods, pushing the boundaries of what's possible in understanding spoken language.
           </p>
 
           {/* <div className=" grid-cols-3 mt-3 w-full md:w-[55%] lg:w-full mx-auto">
@@ -67,7 +67,7 @@ const Home: NextPage = () => {
                 <div
                     className="absolute transitiona-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt">
                 </div>
-                <a href="https://tally.so/r/m6e6EA"
+                <a href="https://tally.so/r/3Exd6A"
                     className="relative inline-flex items-center justify-center px-6 py-3 sm:text-base text-sm font-bold text-white transition-all duration-200 bg-gray-900 font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
                     role="button">Join the waiting list &nbsp; 🤗
                 </a>
