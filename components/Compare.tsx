@@ -37,6 +37,10 @@ export default function Compare(){
                   <span>Diarization (separate per speaker) </span>
                 </li>
                 <li className="space-x-2">
+                  <span className="font-bold text-lg text-green-500">&#10003;</span>
+                  <span>Realtime Streaming </span>
+                </li>
+                <li className="space-x-2">
                 <span className="font-bold text-lg text-green-500">&#10003;</span>
                   <span>Word Level timestamps</span>
                 </li>
@@ -63,11 +67,15 @@ export default function Compare(){
               </ul>
             </div>
             <div className="relative space-y-6 p-8 sm:p-12">
-              <h3 className="text-center text-4xl font-semibold text-gray-700 dark:text-white sm:mb-28">Whisper</h3>
+              <h3 className="text-center text-4xl font-semibold text-gray-700 dark:text-white sm:mb-28">Openai Whisper</h3>
               <ul role="list" className="m-auto w-max space-y-4 py-6 text-gray-600 dark:text-gray-300">
                 <li className="space-x-2">
                   <span className="font-bold text-lg text-red-500">&#10540;</span>
                   <span>Diarization (separate per speaker) </span>
+                </li>
+                <li className="space-x-2">
+                  <span className="font-bold text-lg text-red-500">&#10540;</span>
+                  <span>Realtime Stremaming </span>
                 </li>
                 <li className="space-x-2">
                 <span className="font-bold text-lg text-red-500">&#10540;</span>

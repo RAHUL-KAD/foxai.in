@@ -27,7 +27,7 @@ const Home: NextPage = () => {
     <div className="mx-auto flex max-w-full flex-col items-center justify-center py-2">
       <Head>
         <title>Sonicai | Speech to Text API </title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.ico"/>
       </Head>
 
       <svg className="absolute inset-0 -z-10 h-full w-full stroke-gray-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]" aria-hidden="true">
@@ -117,7 +117,8 @@ const Home: NextPage = () => {
 
         </div>
       </main>
-
+      
+      <Compare />
       {/* <Testimonials /> */}
       {/* <Datasets /> */}
       {/* <Features1/> */}
@@ -126,10 +127,8 @@ const Home: NextPage = () => {
       {/* <Solutions /> */}
       {/* <TabsTest /> */}
       {/* <Features  /> */}
-      {/* <CallToAction /> */}
-      {/* <Footer /> */}
-
-      <Compare />
+      <CallToAction />
+      <Footer />
     </div>
   );
 };

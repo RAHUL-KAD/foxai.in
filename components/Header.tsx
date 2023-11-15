@@ -11,7 +11,7 @@ export default function Header() {
 
   return (
     <header className="w-full mt-5 mx-auto bg-white rounded-3xl px-2">
-      <div className="w-full mx-auto md:px-12 px-8 max-w-full">
+      <div className="w-full mx-auto md:px-12 px-8 max-w-7xl">
         <div
           x-data="{ open: false }"
           className="relative flex flex-col max-w-7xl pt-2 mx-auto md:items-center md:justify-between md:flex-row md:px-6"
@@ -22,7 +22,7 @@ export default function Header() {
             <Image
               alt="header text"
               src="/favicon.svg"
-              className="sm:w-12 sm:h-12 w-10 h-10"
+              className="sm:w-7 sm:h-10 w-7 h-10"
               width={25}
               height={25}
           />
