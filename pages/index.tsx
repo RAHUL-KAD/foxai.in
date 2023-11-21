@@ -21,6 +21,7 @@ import {
 
 import Solutions2 from "../components/Solutions2";
 import Compare from "../components/Compare";
+import Blog from "../components/Blog";
 
 const Home: NextPage = () => {
   return (
@@ -44,7 +45,7 @@ const Home: NextPage = () => {
         <div className="mt-10 sm:mt-16">
           {/* <Badge text={"Try our GenAI solution for Contact Center"} /> */}
           <h1 className="font-display mx-auto max-w-4xl text-4xl font-bold sm:text-left text-center tracking-normal text-slate-900 sm:text-5xl">
-            <span className="relative whitespace-nowrap text-[#333]">
+            <span className="relative sm:whitespace-nowrap text-[#333]">
               <span className="relative mr-2">Transcribe & Understand</span>
             </span>
           </h1>
@@ -118,7 +119,7 @@ const Home: NextPage = () => {
         </div>
       </main>
       
-      <Compare />
+      {/* <Blog /> */}
       {/* <Testimonials /> */}
       {/* <Datasets /> */}
       {/* <Features1/> */}
@@ -127,8 +128,8 @@ const Home: NextPage = () => {
       {/* <Solutions /> */}
       {/* <TabsTest /> */}
       {/* <Features  /> */}
-      <CallToAction />
-      <Footer />
+      {/* <CallToAction /> */}
+      {/* <Footer /> */}
     </div>
   );
 };

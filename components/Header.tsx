@@ -73,7 +73,7 @@ export default function Header() {
               className="px-2 lg:px-6 py-2 md:px-3 text-lg font-medium text-black hover:text-accent-400 lg:ml-auto"
               href="/#why"
             >
-              {/* Why Whisper? */}
+              {/* Why Sonicai? */}
             </a>
 
             {/* <details className="dropdown lg:ml-auto">
@@ -88,14 +88,14 @@ export default function Header() {
               className="px-2 lg:px-6 py-2 md:px-3 text-lg font-medium text-black hover:text-accent-400"
               href="/#solutions"
             >
-              {/* Docs */}
+              {/* Changlog */}
             </a>
             
             <a
               className="px-2 lg:px-6 py-2 md:px-3 text-lg font-medium text-black hover:text-accent-400"
               href="#use-cases"
             >
-              {/* Pricing */}
+              {/* Blogs */}
             </a>
 
 
