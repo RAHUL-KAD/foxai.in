@@ -10,7 +10,7 @@ export default function Header() {
   }
 
   return (
-    <header className="w-full mt-5 mx-auto bg-white rounded-3xl px-2">
+    <header className="w-full mt-5 mx-auto rounded-3xl px-2">
       <div className="w-full mx-auto md:px-12 px-8 max-w-7xl">
         <div
           x-data="{ open: false }"
@@ -22,19 +22,19 @@ export default function Header() {
             <Image
               alt="header text"
               src="/favicon.svg"
-              className="sm:w-7 sm:h-10 w-7 h-10"
+              className="sm:w-14 sm:h-12 w-10 h-10"
               width={25}
               height={25}
           />
-            <h1 className="sm:text-4xl text-4xl font-bold  tracking-tight">
-            Sonicai &nbsp;
+            <h1 className="sm:text-4xl text-3xl font-bold  tracking-tight">
+            Foxai &nbsp;
             <sup >
-              <small className="text-sm">beta</small>
+              {/* <small className="text-sm">beta</small> */}
             </sup>
             </h1>
           </Link>
 
-            <button
+            {/* <button
               onClick={menuExpand}
               className="inline-flex items-center justify-center p-2 text-slate-400 hover:text-black focus:outline-none focus:text-black lg:hidden"
               id='expand-menu'
@@ -61,7 +61,7 @@ export default function Header() {
                   d="M6 18L18 6M6 6l12 12"
                 ></path>
               </svg>
-            </button>
+            </button> */}
           </div>
 
           <nav
@@ -111,7 +111,7 @@ export default function Header() {
               </a>
             </div> */}
 
-            <div className="inline-flex items-center gap-2 list-none lg:ml-auto">
+            {/* <div className="inline-flex items-center gap-2 list-none lg:ml-auto">
               <a
                 className="inline-flex items-center justify-center px-4 py-2 text-sm font-medium text-white bg-[#333] hover:text-black rounded-lg group focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 hover:bg-slate-50 active:bg-slate-200 active:text-accent-400 focus-visible:outline-black"
                 href="https://tally.so/r/3Exd6A"
@@ -120,7 +120,7 @@ export default function Header() {
                 >
                 Join the waiting list &nbsp; 🤗
               </a>
-            </div>
+            </div> */}
 
             
 
@@ -138,9 +138,9 @@ export default function Header() {
           </nav>
         </div>
 
-        <div>
+        {/* <div>
           <hr className="w-full h-0.5 border-t-0 mt-2 bg-slate-50 opacity-200 dark:opacity-200" />
-        </div>
+        </div> */}
       </div>
 
     </header>

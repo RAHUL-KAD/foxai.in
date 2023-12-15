@@ -6,7 +6,11 @@ module.exports = {
     './app/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'gradient-conic': 'conic-gradient(var(--conic-position), var(--tw-gradient-stops))',
+      },
+    },
   },
   plugins: [
     require('flowbite/plugin'),

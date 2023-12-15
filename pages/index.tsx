@@ -28,7 +28,7 @@ const Home: NextPage = () => {
     <div className="mx-auto flex max-w-full flex-col items-center justify-center py-2">
       <Head>
         <title>Sonicai | Speech to Text API </title>
-        <link rel="icon" href="/favicon.ico"/>
+        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <svg className="absolute inset-0 -z-10 h-full w-full stroke-gray-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]" aria-hidden="true">
@@ -41,84 +41,22 @@ const Home: NextPage = () => {
       </svg>
 
       <Header />
-      <main className="mt-10 grid sm:max-w-7xl gap-x-40 px-4 sm:ml-40 sm:mt-10 sm:grid-cols-2">
-        <div className="mt-10 sm:mt-16">
-          {/* <Badge text={"Try our GenAI solution for Contact Center"} /> */}
-          <h1 className="font-display mx-auto max-w-4xl text-4xl font-bold sm:text-left text-center tracking-normal text-slate-900 sm:text-5xl">
-            <span className="relative sm:whitespace-nowrap text-[#333]">
-              <span className="relative mr-2">Transcribe & Understand</span>
-            </span>
-          </h1>
 
-          <h1 className="font-display relative whitespace-nowrap sm:text-left text-center mx-auto lg:mt-4 max-w-4xl text-4xl font-bold tracking-normal text-[#333] sm:mt-2 sm:text-5xl">
-          Human Speech
-          </h1>
+      <main className="md:mt-20 lg:mt-20 mt-5 ">
 
-          <p className="mx-auto mt-5 text-center md:text-left sm:text-xl text-lg leading-7 text-[#333] sm:mt-5 whitespace-wrap">
-          {/* Transform contact center customer experience with generative AI. */}
-          Our focus is on building advanced solutions that go beyond traditional transcription methods, pushing the boundaries of what's possible in understanding spoken language.
-          </p>
 
-          {/* <div className=" grid-cols-3 mt-3 w-full md:w-[55%] lg:w-full mx-auto">
-        </div>  */}
+        <section className="bg-white dark:bg-gray-900">
+          <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
 
-          <div className="flex space-x-4 mt-5 flex-row justify-center sm:justify-start items-center">
+            <h1 className="mb-4 text-4xl font-extrabold tracking-[0.012em] text-gray-900 md:text-5xl lg:text-7xl dark:text-white">Best Open Source</h1>
+            <h1 className="mb-4 text-4xl font-extrabold tracking-[0.012em] text-[#FF6F1F] md:text-5xl lg:text-6xl dark:text-white">OpenAI Alternative</h1>
+            <p className="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.</p>
+            
 
-            <div className="relative inline-flex group mt-6">
-                <div
-                    className="absolute transitiona-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt">
-                </div>
-                <a href="https://tally.so/r/3Exd6A"
-                    className="relative inline-flex items-center justify-center px-6 py-3 sm:text-base text-sm font-bold text-white transition-all duration-200 bg-gray-900 font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
-                    role="button">Join the waiting list &nbsp; 🤗
-                </a>
-            </div>
-
-            {/* <div className="relative inline-flex group mt-6">
-                <a href="https://tally.so/r/m6e6EA" target="_blank"
-              rel="noopener noreferrer" title="Get quote now"
-                    className="relative inline-flex items-center justify-center px-6 py-3 sm:text-base text-sm font-bold text-white transition-all duration-200 bg-[#6a32ee] font-pj rounded-xl focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 hover:border-black hover:bg-transparent hover:text-black focus:outline-none focus-visible:outline-black focus-visible:ring-black lg:w-auto"
-                    role="button">Contact Us
-                </a>
-            </div> */}
-
-            {/* <Link
-              className="mt-7 inline-flex items-center justify-center rounded-xl border-2 bg-[#6a32ee] px-6 py-3 text-center font-medium text-white duration-200 hover:bg-transparent hover:text-black focus:outline-none focus-visible:outline-black focus-visible:ring-black lg:w-auto"
-              href="https://tally.so/r/m6e6EA"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Contact Us
-            </Link> */}
-
-            {/* <Link
-              className="mt-7 inline-flex items-center justify-center rounded-xl border-2 bg-[#6a32ee] px-6 py-3 text-center font-medium text-white duration-200 hover:border-black hover:bg-transparent hover:text-black focus:outline-none focus-visible:outline-black focus-visible:ring-black lg:w-auto"
-              href="/playground"
-            >
-              Try it for yourself
-            </Link> */}
           </div>
-
-          {/* <li className="mt-5 ml-2">commercial use &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; •  GDPR compliance  </li> */}
-        </div>
-        
-
-        <div >
-
-          <video
-            src="https://uploads-ssl.webflow.com/62fa8255a7287e714931a2ad/62fa85a47f6f589559851bfc_web_white-transcode.mp4"
-            width="100%"
-            height="auto"
-            autoPlay
-            loop
-            muted
-            playsInline
-            className="mt-10"
-          ></video>
-
-        </div>
+        </section>
       </main>
-      
+
       {/* <Blog /> */}
       {/* <Testimonials /> */}
       {/* <Datasets /> */}
